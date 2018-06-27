@@ -1,0 +1,27 @@
+<?php //php 7.0.8
+$sum = 0;
+for($x=3, $max=1000; $x <= $max; $x++) {
+    if((($x % 3) == 0) || (($x % 5) == 0)) {
+        echo $x . ' ';
+        $sum = $sum + $x;
+
+        
+        
+        
+    } 
+}
+$max = 1000;
+function sumOfNaturalNumbers($n) {
+    return ($n * ($n + 1)) / 2;
+}
+
+$sum = sumOfNaturalNumbers($max / 3) * 3;
+$sum += sumOfNaturalNumbers($max / 5) * 5;
+$sum -= sumOfNaturalNumbers($max / 15) * 15;
+
+
+
+            echo $sum;
+
+
+?>
